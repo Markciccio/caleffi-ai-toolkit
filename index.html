@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caleffi AI Toolkit</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Opzionale: Font Awesome per icone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-caleffi-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- Potresti mettere un piccolo logo Caleffi qui se disponibile -->
+                Caleffi AI Toolkit
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#botpress">Botpress</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#deepl">DeepL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#did">D-ID</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gemini">Gemini</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#consigli">Consigli Utili</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Benvenuto nel Caleffi AI Toolkit</h1>
+            <p class="lead">Il tuo accesso rapido agli strumenti AI per Caleffi.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+
+        <!-- Botpress Section -->
+        <section id="botpress" class="py-4 tool-section">
+            <h2 class="mb-4 section-title"><i class="fas fa-robot me-2"></i>Botpress: Assistenza Clienti Intelligente</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="placeholder-botpress.png" alt="Botpress Screenshot" class="img-fluid rounded shadow-sm">
+                    <!-- SOSTITUISCI con il tuo screenshot di Botpress, es: images/botpress_dashboard.png -->
+                </div>
+                <div class="col-md-8">
+                    <h4>A Cosa Serve?</h4>
+                    <p>Creare chatbot AI per il supporto clienti multilingua e l'assistenza interna, utilizzando la knowledge base aziendale (listini, FAQ, ecc.).</p>
+                    <h4>Guida Rapida Caleffi:</h4>
+                    <ul>
+                        <li><strong>Setup Iniziale:</strong> Accedi a <a href="https://botpress.com/" target="_blank">Botpress</a>, crea un nuovo bot.</li>
+                        <li><strong>Istruzioni Chiave (Personalità):</strong>
+                            <pre class="bg-light p-2 rounded small"><code>Sei un assistente clienti per Caleffi... (inserisci qui le tue istruzioni complete)</code></pre>
+                        </li>
+                        <li><strong>Knowledge Base:</strong> Carica i documenti PDF e TXT rilevanti (es. `Listino prezzi 2025`, `FAQ prodotti`).</li>
+                        <li><strong>Test:</strong> Utilizza l'emulatore per verificare le risposte.</li>
+                    </ul>
+                    <div class="alert alert-caleffi-accent" role="alert">
+                        <strong><i class="fas fa-lightbulb me-1"></i>Consiglio Caleffi:</strong> Mantieni la knowledge base aggiornata e testa il bot regolarmente con domande reali per assicurare risposte precise e utili. Non menzionare mai i nomi dei file della KB.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="my-5">
+
+        <!-- DeepL Section -->
+        <section id="deepl" class="py-4 tool-section">
+            <h2 class="mb-4 section-title"><i class="fas fa-language me-2"></i>DeepL: Traduzioni Professionali</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="placeholder-deepl.png" alt="DeepL Screenshot" class="img-fluid rounded shadow-sm">
+                    <!-- SOSTITUISCI con il tuo screenshot di DeepL, es: images/deepl_translate.png -->
+                </div>
+                <div class="col-md-8">
+                    <h4>A Cosa Serve?</h4>
+                    <p>Tradurre testi e documenti (PDF, Word, PowerPoint) con alta qualità, mantenendo la formattazione e utilizzando glossari personalizzati per la terminologia Caleffi.</p>
+                    <h4>Guida Rapida Caleffi:</h4>
+                    <ul>
+                        <li><strong>Accesso:</strong> Vai su <a href="https://www.deepl.com/translator" target="_blank">DeepL Translator</a>.</li>
+                        <li><strong>Traduzione File:</strong> Seleziona "Traduci file", carica il documento, scegli le lingue.</li>
+                        <li><strong>Glossari:</strong> Crea e utilizza glossari per termini tecnici specifici Caleffi (es. "Valvola di zona" -> "Zone Valve"). Questo è cruciale!</li>
+                    </ul>
+                    <div class="alert alert-caleffi-accent" role="alert">
+                        <strong><i class="fas fa-lightbulb me-1"></i>Consiglio Caleffi:</strong> Un glossario ben curato è la chiave per traduzioni tecniche coerenti e professionali. Revisiona sempre i documenti tradotti importanti.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="my-5">
+
+        <!-- D-ID Section -->
+        <section id="did" class="py-4 tool-section">
+            <h2 class="mb-4 section-title"><i class="fas fa-video me-2"></i>D-ID: Video con Avatar e Traduzioni Video</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="placeholder-did.png" alt="D-ID Screenshot" class="img-fluid rounded shadow-sm">
+                    <!-- SOSTITUISCI con il tuo screenshot di D-ID, es: images/did_studio.png -->
+                </div>
+                <div class="col-md-8">
+                    <h4>A Cosa Serve?</h4>
+                    <p>Creare video con avatar parlanti AI e tradurre video esistenti (es. tutorial, presentazioni) in diverse lingue tramite la funzione "Video Translate".</p>
+                    <h4>Guida Rapida Caleffi:</h4>
+                    <ul>
+                        <li><strong>Accesso:</strong> Registrati o accedi a <a href="https://studio.d-id.com/" target="_blank">D-ID Studio</a>.</li>
+                        <li><strong>Video Translate:</strong> Carica il tuo video, seleziona la lingua di destinazione e la voce.</li>
+                        <li><strong>Creazione Avatar:</strong> Puoi creare video da zero con un testo e un avatar predefinito o caricato.</li>
+                    </ul>
+                    <div class="alert alert-caleffi-accent" role="alert">
+                        <strong><i class="fas fa-lightbulb me-1"></i>Consiglio Caleffi:</strong> Ottimo per rendere rapidamente disponibili i contenuti video a tutte le filiali. Verifica la sincronizzazione labiale e la naturalezza della voce AI.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="my-5">
+
+        <!-- Gemini Section -->
+        <section id="gemini" class="py-4 tool-section">
+            <h2 class="mb-4 section-title"><i class="fas fa-brain me-2"></i>Google Gemini: AI Generativa e Gems</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="placeholder-gemini.png" alt="Gemini Screenshot" class="img-fluid rounded shadow-sm">
+                    <!-- SOSTITUISCI con il tuo screenshot di Gemini, es: images/gemini_gems.png -->
+                </div>
+                <div class="col-md-8">
+                    <h4>A Cosa Serve?</h4>
+                    <p>Generare testi, analizzare documenti, creare assistenti personalizzati ("Gems") per compiti specifici come la redazione di capitolati o l'assistenza tecnica, e generare audio.</p>
+                    <h4>Guida Rapida Caleffi:</h4>
+                    <ul>
+                        <li><strong>Accesso:</strong> Vai su <a href="https://gemini.google.com/" target="_blank">Gemini</a>.</li>
+                        <li><strong>Creazione Gems:</strong>
+                            <ul>
+                                <li>Clicca su "Crea un nuovo Gem" (o simile).</li>
+                                <li><strong>Nome:</strong> Es. "Risolutore Capitolati Caleffi".</li>
+                                <li><strong>Istruzioni:</strong> "Sei un assistente per la redazione di capitolati tecnici Caleffi..."</li>
+                                <li><strong>Conoscenza:</strong> Carica PDF e documenti rilevanti (es. listini prodotto Caleffi per il "Risolutore di capitolati").</li>
+                            </ul>
+                        </li>
+                        <li><strong>Esempi Gems Caleffi:</strong> "Risolutore di Capitolati", "Analisi Capitolato", "Assistente Tecnico Caleffi".</li>
+                    </ul>
+                    <div class="alert alert-caleffi-accent" role="alert">
+                        <strong><i class="fas fa-lightbulb me-1"></i>Consiglio Caleffi:</strong> Definisci istruzioni chiare e fornisci documenti di conoscenza pertinenti per ottenere il massimo dai tuoi Gems. Sperimenta con i prompt!
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="my-5">
+
+        <!-- Consigli Utili Generali -->
+        <section id="consigli" class="py-4">
+            <h2 class="mb-4 section-title"><i class="fas fa-check-circle me-2"></i>Consigli Utili Generali</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-shield-alt me-1"></i> Etica e Sicurezza Dati</h5>
+                            <p class="card-text">Non caricare MAI informazioni aziendali confidenziali, dati personali sensibili o segreti industriali in strumenti AI pubblici non approvati formalmente da Caleffi per tale scopo. Sii consapevole di come i dati vengono trattati.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-magic me-1"></i> Prompt Engineering</h5>
+                            <p class="card-text">Per ottenere risultati migliori dalle AI generative (come Gemini), impara a scrivere "prompt" (istruzioni) chiari, specifici e dettagliati. Fornisci contesto e definisci il risultato desiderato.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-search-plus me-1"></i> Verifica Sempre</h5>
+                            <p class="card-text">L'AI è potente, ma non infallibile. Verifica sempre le informazioni generate, specialmente per documenti tecnici, comunicazioni ufficiali o decisioni importanti. L'AI è un assistente, non un sostituto del giudizio umano esperto.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fas fa-sync-alt me-1"></i> Mantieniti Aggiornato</h5>
+                            <p class="card-text">Il campo dell'AI evolve rapidamente. Torna a visitare questo Toolkit e segui le comunicazioni interne per scoprire nuovi strumenti o aggiornamenti sulle best practice Caleffi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Caleffi S.p.a. - AI Toolkit Interno
+            <!-- Potresti aggiungere un link al sito Caleffi principale se vuoi -->
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (Popper.js incluso) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

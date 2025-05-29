@@ -1,0 +1,102 @@
+/* Importa un font leggibile (opzionale) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Colori Caleffi (Esempio - sostituisci con i tuoi colori ufficiali se li hai) */
+:root {
+    --caleffi-primary: #004B8D; /* Un blu scuro, tipico aziendale */
+    --caleffi-secondary: #007bff; /* Un blu più brillante per accenti */
+    --caleffi-accent: #e9f5ff; /* Un azzurro molto chiaro per sfondi di alert */
+    --caleffi-text: #333;
+}
+
+.bg-caleffi-primary {
+    background-color: var(--caleffi-primary) !important;
+}
+
+.navbar-brand, .nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #ddd !important;
+}
+
+.hero-section {
+    background-color: #f8f9fa; /* Grigio chiaro */
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.hero-section h1 {
+    color: var(--caleffi-primary);
+    font-weight: 700;
+}
+
+.section-title {
+    color: var(--caleffi-primary);
+    border-bottom: 2px solid var(--caleffi-secondary);
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.tool-section img {
+    border: 1px solid #ddd;
+    max-height: 300px; /* Limita altezza per uniformità */
+    object-fit: contain; /* o 'cover' se preferisci riempire */
+    background-color: #f8f9fa; /* Sfondo per immagini con trasparenza */
+}
+
+.tool-section h4 {
+    color: var(--caleffi-secondary);
+    margin-top: 0;
+}
+
+.alert-caleffi-accent {
+    background-color: var(--caleffi-accent);
+    border-color: var(--caleffi-secondary);
+    color: var(--caleffi-text);
+}
+
+.alert-caleffi-accent strong {
+    color: var(--caleffi-primary);
+}
+
+pre {
+    white-space: pre-wrap; /* Permette al testo in pre di andare a capo */
+    word-wrap: break-word;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Stile per le card dei consigli */
+#consigli .card {
+    border-left: 4px solid var(--caleffi-secondary);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#consigli .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#consigli .card-title i {
+    color: var(--caleffi-primary);
+}
+
+footer {
+    font-size: 0.9em;
+}
+
+/* Smooth scrolling per i link interni della navbar */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Aggiusta il target degli anchor per la navbar fissa */
+section[id] {
+  scroll-margin-top: 70px; /* Altezza della tua navbar + un po' di margine */
+}
