@@ -6,11 +6,13 @@ body {
     line-height: 1.6;
 }
 
-/* Colori Caleffi (Esempio - sostituisci con i tuoi colori ufficiali se li hai) */
+/* Colori Caleffi */
 :root {
-    --caleffi-primary: #004B8D; /* Un blu scuro, tipico aziendale */
-    --caleffi-secondary: #007bff; /* Un blu più brillante per accenti */
-    --caleffi-accent: #e9f5ff; /* Un azzurro molto chiaro per sfondi di alert */
+    --caleffi-green: #007A33; /* Verde Caleffi principale - PUOI CAMBIARE QUESTO VALORE */
+    --caleffi-dark-green: #005c24; /* Un verde più scuro per accenti o hover */
+    --caleffi-primary: var(--caleffi-green);
+    --caleffi-secondary: var(--caleffi-dark-green);
+    --caleffi-accent: #e6f4ea; /* Un verde molto chiaro per sfondi di alert */
     --caleffi-text: #333;
 }
 
@@ -20,6 +22,11 @@ body {
 
 .navbar-brand, .nav-link {
     color: #fff !important;
+}
+
+.navbar-brand img { /* Stile per il logo nella navbar */
+    max-height: 30px; /* Già impostato nell'HTML, ma può essere definito qui */
+    width: auto;
 }
 
 .nav-link:hover {
