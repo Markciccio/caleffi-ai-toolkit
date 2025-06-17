@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Caleffi AI Toolkit</title>
 
   <!-- Bootstrap CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     rel="stylesheet"
-  >
+  />
 
   <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-  >
+  />
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-caleffi-primary sticky-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="logocaleffi.PNG" alt="Caleffi Logo" height="30" class="me-2">
+        <img src="logocaleffi.PNG" alt="Caleffi Logo" height="30" class="me-2" />
         AI Toolkit
       </a>
       <button
@@ -61,149 +61,26 @@
 
   <!-- Main Content -->
   <main class="container my-5">
-    <!-- Botpress Section -->
-    <section id="botpress" class="py-4 tool-section">
-      <h2 class="mb-4 section-title"><i class="fas fa-robot me-2"></i>Botpress: Intelligent Customer Support</h2>
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <img src="placeholder-botpress.png" alt="Botpress Screenshot" class="img-fluid rounded shadow-sm">
-        </div>
-        <div class="col-md-8">
-          <h4>What is it for?</h4>
-          <p>Create AI chatbots for multilingual customer support and internal assistance, using the company's knowledge base (price lists, FAQs, etc.).</p>
-          <h4>Caleffi Quick Guide:</h4>
-          <ul>
-            <li><strong>Initial Setup:</strong> Access <a href="https://botpress.com/" target="_blank">Botpress</a>, create a new bot.</li>
-            <li><strong>Key Instructions (Personality):</strong>
-              <pre class="bg-light p-2 rounded small"><code>You are a customer assistant for Caleffi... (insert your full instructions here)</code></pre>
-            </li>
-            <li><strong>Knowledge Base:</strong> Upload relevant PDF and TXT documents (e.g., `2025 Price List`, `Product FAQs`).</li>
-            <li><strong>Test:</strong> Use the emulator to check responses.</li>
-          </ul>
-          <div class="alert alert-caleffi-accent" role="alert">
-            <strong><i class="fas fa-lightbulb me-1"></i>Caleffi Tip:</strong> Keep the knowledge base updated and test the bot regularly with real questions to ensure accurate and helpful answers. Never mention the KB file names.
-          </div>
-        </div>
-      </div>
+    <!-- Sections would go here... (Botpress, DeepL, D-ID, Gemini, Tips) -->
+    <section id="botpress" class="py-4">
+      <h2><i class="fas fa-robot me-2"></i>Botpress</h2>
+      <p>Chatbot intelligente per assistenza tecnica Caleffi.</p>
     </section>
-    <hr class="my-5">
-
-    <!-- DeepL Section -->
-    <section id="deepl" class="py-4 tool-section">
-      <h2 class="mb-4 section-title"><i class="fas fa-language me-2"></i>DeepL: Professional Translations</h2>
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <img src="placeholder-deepl.png" alt="DeepL Screenshot" class="img-fluid rounded shadow-sm">
-        </div>
-        <div class="col-md-8">
-          <h4>What is it for?</h4>
-          <p>Translate texts and documents (PDF, Word, PowerPoint) with high quality, maintaining formatting and using custom glossaries for Caleffi terminology.</p>
-          <h4>Caleffi Quick Guide:</h4>
-          <ul>
-            <li><strong>Access:</strong> Go to <a href="https://www.deepl.com/translator" target="_blank">DeepL Translator</a>.</li>
-            <li><strong>File Translation:</strong> Select "Translate files", upload the document, choose languages.</li>
-            <li><strong>Glossaries:</strong> Create and use glossaries for Caleffi-specific technical terms (e.g., "Valvola di zona" → "Zone Valve").</li>
-          </ul>
-          <div class="alert alert-caleffi-accent" role="alert">
-            <strong><i class="fas fa-lightbulb me-1"></i>Caleffi Tip:</strong> A well-maintained glossary is key for consistent and professional technical translations. Always review important translated documents.
-          </div>
-        </div>
-      </div>
+    <section id="deepl" class="py-4">
+      <h2><i class="fas fa-language me-2"></i>DeepL</h2>
+      <p>Traduzioni professionali di testi e documenti.</p>
     </section>
-    <hr class="my-5">
-
-    <!-- D-ID Section -->
-    <section id="did" class="py-4 tool-section">
-      <h2 class="mb-4 section-title"><i class="fas fa-video me-2"></i>D-ID: AI Avatar Videos and Video Translations</h2>
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <img src="placeholder-did.png" alt="D-ID Screenshot" class="img-fluid rounded shadow-sm">
-        </div>
-        <div class="col-md-8">
-          <h4>What is it for?</h4>
-          <p>Create videos with AI talking avatars and translate existing videos (e.g., tutorials, presentations) into different languages using the "Video Translate" feature.</p>
-          <h4>Caleffi Quick Guide:</h4>
-          <ul>
-            <li><strong>Access:</strong> Register or log in to <a href="https://studio.d-id.com/" target="_blank">D-ID Studio</a>.</li>
-            <li><strong>Video Translate:</strong> Upload your video, select the target language and voice.</li>
-            <li><strong>Avatar Creation:</strong> Create videos from scratch with text and an avatar.</li>
-          </ul>
-          <div class="alert alert-caleffi-accent" role="alert">
-            <strong><i class="fas fa-lightbulb me-1"></i>Caleffi Tip:</strong> Great for quickly making video content available to all branches. Check lip-sync and naturalness of the AI voice.
-          </div>
-        </div>
-      </div>
+    <section id="did" class="py-4">
+      <h2><i class="fas fa-video me-2"></i>D-ID</h2>
+      <p>Video con avatar AI e traduzioni video.</p>
     </section>
-    <hr class="my-5">
-
-    <!-- Gemini Section -->
-    <section id="gemini" class="py-4 tool-section">
-      <h2 class="mb-4 section-title"><i class="fas fa-brain me-2"></i>Google Gemini: Generative AI and Gems</h2>
-      <div class="row">
-        <div class="col-md-4 mb-3">
-          <img src="placeholder-gemini.png" alt="Gemini Screenshot" class="img-fluid rounded shadow-sm">
-        </div>
-        <div class="col-md-8">
-          <h4>What is it for?</h4>
-          <p>Generate texts, analyze documents, create custom assistants ("Gems") for specific tasks like drafting technical specifications, and generate audio.</p>
-          <h4>Caleffi Quick Guide:</h4>
-          <ul>
-            <li><strong>Access:</strong> Go to <a href="https://gemini.google.com/" target="_blank">Gemini</a>.</li>
-            <li><strong>Creating Gems:</strong>
-              <ul>
-                <li>Click on "Create a new Gem".</li>
-                <li><strong>Name:</strong> E.g., "Caleffi Specifications Solver".</li>
-                <li><strong>Instructions:</strong> "You are an assistant for drafting Caleffi technical specifications...".</li>
-                <li><strong>Knowledge:</strong> Upload relevant PDFs (e.g., Caleffi product lists).</li>
-              </ul>
-            </li>
-            <li><strong>Examples:</strong> "Specifications Solver", "Specification Analysis", "Caleffi Technical Assistant".</li>
-          </ul>
-          <div class="alert alert-caleffi-accent" role="alert">
-            <strong><i class="fas fa-lightbulb me-1"></i>Caleffi Tip:</strong> Provide clear instructions and relevant documents to get the most out of your Gems. Experiment with prompts!
-          </div>
-        </div>
-      </div>
+    <section id="gemini" class="py-4">
+      <h2><i class="fas fa-brain me-2"></i>Gemini</h2>
+      <p>IA generativa per analisi e generazione contenuti.</p>
     </section>
-    <hr class="my-5">
-
-    <!-- Helpful Tips Section -->
     <section id="consigli" class="py-4">
-      <h2 class="mb-4 section-title"><i class="fas fa-check-circle me-2"></i>Helpful Tips</h2>
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fas fa-shield-alt me-1"></i>Ethics & Data Security</h5>
-              <p>Non caricare dati sensibili o riservati su strumenti non approvati. Verifica sempre come vengono trattati i dati.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-3">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fas fa-magic me-1"></i>Prompt Engineering</h5>
-              <p>Scrivi prompt chiari e dettagliati per ottenere risposte migliori dalle IA. Definisci sempre contesto e obiettivi.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-3">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fas fa-search-plus me-1"></i>Always Verify</h5>
-              <p>Controlla sempre le risposte generate, in particolare per documenti tecnici o comunicazioni ufficiali.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 mb-3">
-          <div class="card h-100">
-            <div class="card-body">
-              <h5 class="card-title"><i class="fas fa-sync-alt me-1"></i>Stay Updated</h5>
-              <p>L’AI evolve velocemente: torna qui spesso e segui le comunicazioni interne per nuovi strumenti e best practice.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <h2><i class="fas fa-lightbulb me-2"></i>Helpful Tips</h2>
+      <p>Consigli per usare al meglio gli strumenti AI.</p>
     </section>
   </main>
 
@@ -214,34 +91,8 @@
     </div>
   </footer>
 
-  <!-- ------------------------------------------------------------
-       BOTPRESS WEBCHAT INTEGRATION
-       ------------------------------------------------------------ -->
-
-  <!-- 1) Geolocalizzazione via API gratuita (ipapi.co) -->
-  <script>
-    async function fetchLocale() {
-      try {
-        const res = await fetch('https://ipapi.co/json/');
-        const { country_code } = await res.json();
-        return (country_code || 'en').toLowerCase();
-      } catch {
-        return 'en';
-      }
-    }
-
-    window.botpressWebChat = {
-      extraData: async () => ({
-        locale: await fetchLocale(),
-        pageUrl: window.location.href
-      })
-    };
-  </script>
-
-  <!-- 2) Loader Webchat v3 -->
-  <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js" defer></script>
-
-  <!-- 3) File di configurazione esportato da Botpress -->
-  <script src="https://files.bpcontent.cloud/2025/06/17/12/YOUR_EXPORT.js" defer></script>
+  <!-- Botpress Webchat -->
+  <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2025/06/17/12/20250617123550-56T91OUG.js"></script>
 </body>
 </html>
