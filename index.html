@@ -212,8 +212,37 @@
     </div>
   </footer>
 
-<script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2025/06/17/12/20250617123550-56T91OUG.js"></script>  
+<!-- Footer -->
+  <footer class="bg-light text-center text-lg-start mt-5">
+    <div class="text-center p-3" style="background-color: rgba(0,0,0,0.05);">
+      © 2025 Caleffi S.p.a. – Internal AI Toolkit
+    </div>
+  </footer>
 
+  <!-- 1) Geolocalizzazione via API gratuita (ipapi.co) -->
+  <script>
+    async function fetchLocale() {
+      try {
+        const res = await fetch('https://ipapi.co/json/');
+        const { country_code } = await res.json();
+        return country_code?.toLowerCase() || 'en';
+      } catch {
+        return 'en';
+      }
+    }
+
+    window.botpressWebChat = {
+      extraData: async () => ({
+        locale: await fetchLocale(),
+        pageUrl: window.location.href
+      })
+    };
+  </script>
+
+  <!-- 2) Loader Webchat v3 -->
+  <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js" defer></script>
+
+  <!-- 3) File di configurazione esportato da Botpress (contiene botId, clientId, ecc.) -->
+  <script src="https://files.bpcontent.cloud/2025/06/17/12/20250617122350-5GT91U0G.js" defer></script>
 </body>
 </html>
