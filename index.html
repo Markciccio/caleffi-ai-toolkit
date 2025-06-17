@@ -216,31 +216,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
-<!-- 1) OGNI pagina che ospita il bot deve **prima** definire l’oggetto di configurazione -->
-<script>
-  /*  ❱❱  Config Webchat v3  ❰❰
-     - extraData è una funzione → così la URL viene letta all’istante in cui parte la chat
-     - qui puoi aggiungere qualunque altra property prevista da Botpress
-  */
-  window.botpressWebChat = {
-    /* esempio: colore del launcher
-    stylesheet: "https://cdn.botpress.cloud/webchat/v3.0/themes/default.css",
-    /*/ */
+<script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2025/06/17/12/20250617123320-9YDYKOW3.js"></script>
 
-    /* <<<  qui il dato che ti serve  >>> */
-    extraData: () => ({
-      pageUrl: window.location.href          // l’URL completo
-      // se ti basta il percorso:
-      // pagePath: window.location.pathname
-    })
-  };
-</script>
 
-<!-- 2) Loader della webchat (v3) -->
-<script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js" defer></script>
+  
 
-<!-- 3) File di configurazione generato da Botpress (contiene botId, clientId, ecc.) -->
-<script src="https://files.bpcontent.cloud/2024/11/29/10/20241129104320-TJPL78HX.js" defer></script>
+
+  
 
 </body>
 </html>
